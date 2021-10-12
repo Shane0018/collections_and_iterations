@@ -178,6 +178,13 @@ new_combo_array = ["blue", "pink", "orange", "yellow", "green", "purple", "Snap"
 p new_combo_array.sort 
 
 puts "------------------"
+preforming_artists.each do |artist|
+   
+    ages.each do |age|
+        puts "I <3 #{artist} #{age} "
+    end 
+end 
+puts "------------------"
 
 increased_ages = ages.map do |age|
     age += 1
@@ -193,3 +200,4 @@ new_flipped_coin_results = flipped_coin_results.select do |result|
 end 
 
 p new_flipped_coin_results
+
